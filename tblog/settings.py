@@ -132,3 +132,6 @@ STATICFILES_DIRS = [
     '/var/www/static/',
 ]
 
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = '/path_to/media/' # write the path to the media folder you just created.

@@ -10,7 +10,7 @@ class Blog(models.Model):
     author = models.CharField(max_length=255)
     read_time = models.IntegerField()
     publish = models.DateTimeField(default=timezone.now)
-    hero_image = models.ImageField(blank=True, upload_to='blog/assets')
+    hero_image = models.ImageField(blank=True)
     content = models.TextField()
     tags = models.CharField(max_length=100)
     
