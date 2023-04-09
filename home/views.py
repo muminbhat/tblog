@@ -27,6 +27,11 @@ def contact(request):
         contact = Contact(message=message, email=email, name=name)
         contact.save()
 
+    if request.method == "POST":
+        email = request.POST['nwseml']
+        newsletter = Newsletter(email=email)
+        newsletter.save()
+
     return render(request, 'contact.html')
 
 
